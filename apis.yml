@@ -1,8 +1,26 @@
 aid: swordhealth
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/swordhealth.png
 name: Swordhealth
-description: 'Swordhealth is a company surfaced as a portfolio company of bond-capital, khosla-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthtech. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Sword Health is a digital musculoskeletal (MSK) care provider that
+  combines AI with licensed clinicians to deliver individualized physical therapy,
+  chronic and post-surgical pain treatment, and pelvic and movement health programs
+  to members from home. It sells primarily to employers and health plans, and in
+  2025 launched Sword360, a physical-health data platform. As of this enrichment
+  pass Sword Health publishes no public developer API, OpenAPI, SDK, or developer
+  portal; its public technical surface is a trust center (SOC 2, HIPAA, GDPR), a
+  GitHub organization, and its member/clinician applications. Backed by Bond Capital
+  and Khosla Ventures. Sector: healthtech.'
 url: https://raw.githubusercontent.com/api-evangelist/swordhealth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthtech
+- Digital Health
+- Musculoskeletal
+- Physical Therapy
+- Telehealth
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +49,16 @@ maintainers:
 common:
 - type: Website
   url: https://swordhealth.com
+- type: GitHubOrganization
+  url: https://github.com/SWORDHealth
+- type: TrustCenter
+  url: security/swordhealth-trust-center.yml
+- type: Compliance
+  url: https://trust.swordhealth.com/
+- type: DomainSecurity
+  url: security/swordhealth-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
